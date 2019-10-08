@@ -246,3 +246,98 @@ footer{
   margin-right: -500px;
   display: inline-block;
 }
+
+/*........................PAGE Not FOUND...................................*/
+/*
+body {
+  font-family: cursive;
+  background: url("../img/bgError.svg") no-repeat center fixed;
+  background-size: cover;
+}
+*/
+.flex-container {
+  position: relative;
+}
+.container {
+  position: absolute;
+}
+
+/* Animations */
+
+#transfo1:hover {
+  /* L'animation s'utilisera au hover */
+  animation: anim-transform 2s;
+}
+
+@keyframes anim-octopus {
+  from {
+    transform: translateY(0) rotate(0);
+  }
+  25% {
+    transform: translateY(-20px) rotate(-20deg);
+  }
+  50% {
+    transform: translateX(0) rotate(0);
+  }
+  75% {
+    transform: translateY(-40px) rotate(-40deg);
+  }
+  to {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+.roue-wrapper {
+  width: 100px;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+
+#roue {
+  width: 100px;
+  animation: anim-octopus 3s ease-out infinite;
+}
+
+@keyframes shadow {
+  from {
+    width: 100%;
+    margin: 0 5%;
+  }
+
+  25% {
+    width: 80%;
+    margin: 0 10%;
+  }
+
+  50% {
+    width: 100%;
+    margin: 0 5%;
+  }
+
+  75% {
+    width: 50%;
+    margin: 0 25%;
+  }
+
+  to {
+    width: 100%;
+    margin: 0 5%;
+  }
+}
+
+#shadow {
+  animation: shadow 3s ease-out infinite;
+}
+#error {
+  margin: 0 auto;
+}
+.align-center {
+  text-align: center;
+  font-family: 'Mansalva', cursive;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.quatre {
+  width: 90px;
+}
