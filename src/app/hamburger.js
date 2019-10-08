@@ -11,7 +11,7 @@ export const animateBike = () => {
     {
       duration: 3000,
       complete() {
-        $('img').animate(
+        $('#velo-dessin').animate(
           {
             left: 500,
           },
@@ -20,11 +20,11 @@ export const animateBike = () => {
 
             complete() {
               $('.goRight').animate(
-                { right: ($(window).width() / 2) - 200 },
+                { right: ($(window).width() / 2) - 110 },
                 { duration: 2000 },
               );
               $('.goLeft').animate(
-                { right: ($(window).width() / 2) + 200 },
+                { right: ($(window).width() / 2) + 325 },
                 { duration: 2000 },
               );
             },

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="img/velogrim.png" type="image/x-icon" />
+    <title>Erreur- page non trouvée</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script>
+      $(document).click(function() {
+        $("img").effect("bounce", "slow");
+      });
+    </script>
+
+    <!--Erreur Clonage du chiffre Quatre
+    <script>
+      var number4 = $('<img src="img/quatre.svg" />');
+      number4.css({
+        width: "90px",
+        position: "absolute",
+        top: "400px"
+      });
+      var number41 = number4.clone();
+      number41.css({
+        width: "80px",
+        position: "absolute",
+        top: "300px"
+      });
+      body.append(number4, number41);
+    </script>
+   -->
+  </head>
+  <body>
+    <main>
+      <img class="quatre" src="img/quatre.svg" alt="" />
+      <div class="roue-wrapper">
+        <img src="img/roueAnim.svg" alt="roue" id="roue" />
+        <div class="ellipse">
+          <svg
+            id="shadow"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            height="40"
+            width="120"
+            viewBox="0 0 120 40"
+            xml:space="preserve"
+          >
+            <ellipse fill="#dddddd" cx="60" cy="20" rx="50" ry="9" />
+          </svg>
+        </div>
+      </div>
+      <img class="quatre" src="img/quatre.svg" alt="" />
+      <p class="align-center" id="error">Oups, Page non Trouvée!</p>
+    </main>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
