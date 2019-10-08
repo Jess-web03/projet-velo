@@ -17,12 +17,25 @@ export const animateBike = () => {
           },
           {
             duration: 3000,
+
+            complete() {
+              $('.goRight').animate(
+                { right: ($(window).width() / 2) - 200 },
+                { duration: 2000 },
+              );
+              $('.goLeft').animate(
+                { right: ($(window).width() / 2) + 200 },
+                { duration: 2000 },
+              );
+            },
           },
         );
       },
     },
   );
 };
+
+
 // ouvrir -fermer menu
 export const open = () => {
   document.getElementById('myNav').style.width = '100%';

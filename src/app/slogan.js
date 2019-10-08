@@ -1,10 +1,21 @@
 import $ from 'jquery';
 
-$(document).ready(() => {
-  $('.goRight').animate({ right: '200px' }, 'slow');
-});
-
+export const animateSlogan = () => {
 
 $(document).ready(() => {
-  $('.goLeft').animate({ left: '200px' }, 'slow');
-});
+  $('.goRight').animate({ right: $(window).width(), }, 
+  {
+  duration: 2000,
+  complete(){
+    $('.goLeft').animate({ left: 500, }, 
+    {
+    duration: 2000,
+            },
+           );
+         },
+       },
+      );
+    },
+)
+
+
