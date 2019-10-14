@@ -1,7 +1,7 @@
 /* import './public/style'; // entry point for styles */
 import $ from 'jquery';
 import { open, close, animateBike } from './app/hamburger';
-// import {} from './app/toggle';
+import {} from './app/toggle';
 
 // play sound is impossible in new browser
 // import { audio } from './app/audio';

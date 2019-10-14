@@ -1,8 +1,15 @@
+
+// html{
+//   height:100%;
+// }
+
 body {
   background-image: url(assets/images/background.png);
   background-size: cover;
   /*pour rendre l'image responsive, qu'elle remplisse l'écran à n'importe quelle taille*/
+  
   height: auto;
+  min-height: 100vh;
   background-repeat: no-repeat;
   font-family: "Lato", sans-serif;
 }
@@ -179,6 +186,10 @@ h1 {
   width: 50vw;
   color: red;
 }
+.secu > p,
+.geste > p{
+  font-size: 20px;
+}
 //rajouter de l'espace entre les titres, page mécano
 .margin-bottom{
   margin-bottom: 35px;
@@ -213,14 +224,30 @@ textarea{
 
 /*.................................FOOTER.........................*/
 footer{
-  position: fixed;
+  //position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
   background-color: lightsalmon;
 }
+.footer-container{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#partenaire{
+  width:50px;
+  height:auto;
+}
+h4{
+  font-family: 'Mansalva', cursive; 
+}
+.phrase-footer{
+  font-family: 'Mansalva', cursive; 
 
+}
 
 /*............TEST MENU................*/
 /*petite pensée pour Yasmina xD*/
