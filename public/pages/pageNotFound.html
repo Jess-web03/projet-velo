@@ -7,22 +7,7 @@
     <link rel="shortcut icon" href="assets/images/velogrim.png" type="image/x-icon" />
     <title>Erreur- page non trouvée</title>
     <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" id="close" class="closebtn"><img id="menuOut" src="assets/images/menuOut.svg" alt=""></a>
-        <div class="overlay-content">
-          <a href="apropos.html">A propos</a>
-          <a href="quizz.html"
-            ><button type="button" class="btn btn-success">Quizz</button></a
-          >
-          <a href="mecano.html">Mecano</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </div>
-  
-      <!--Fullscreen Nav-->
-      <!--Menu Hamburger-->
-  
-      <span id="open" style="font-size:30px;cursor:pointer"><img id="fat" src="assets/images/fat.png" alt=""> </span>
+   
    <!--
     <script>
       $(document).click(function() {
@@ -49,7 +34,23 @@
    -->
   </head>
   <body>
-      <header><div class="img-logo"><img id ="logo" src="assets/images/logo.svg" alt=""></div></header>
+      <div id="myNav" class="overlay">
+          <a href="javascript:void(0)" id="close" class="closebtn"><img id="menuOut" src="assets/images/menuOut.svg" alt=""></a>
+          <div class="overlay-content">
+            <a href="apropos.html">A propos</a>
+            <a href="quizz.html"
+              ><button type="button" class="btn btn-success">Quizz</button></a
+            >
+            <a href="mecano.html">Mecano</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+    
+        <!--Fullscreen Nav-->
+        <!--Menu Hamburger-->
+    
+        <span id="open" style="font-size:30px;cursor:pointer"><img id="fat" src="assets/images/fat.png" alt=""> </span>
+      <header><div class="img-logo"><a href="index.html"><img id ="logo" src="assets/images/logo.svg" alt=""></a></div></header>
     <main>
       <!--div flex pour centrer le tout au milieu-->
       <div class="flex">
@@ -75,6 +76,10 @@
       <img class="quatre" src="assets/images/quatre.svg" alt="" />
     </div>
       <p class="align-center" id="error">Oups, Page non Trouvée!</p>
+      <!--Free Sound-->
+      <audio id="bubble" >
+        <source src="assets/audio/cartoon_bubble.mp3" type="audio/mpeg">
+      </audio>
     </main>
     <!--
     <script
