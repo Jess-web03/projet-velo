@@ -1,13 +1,14 @@
 
-// html{
-//   height:100%;
-// }
+ html{
+//height:100%;
+box-sizing: border-box;
+ }
 
 body {
   background-image: url(assets/images/background.png);
   background-size: cover;
   /*pour rendre l'image responsive, qu'elle remplisse l'écran à n'importe quelle taille*/
-  
+  position:relative;
   height: auto;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -236,12 +237,13 @@ textarea{
 
 /*.................................FOOTER.........................*/
 footer{
-  //position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
   text-align: center;
   background-color: lightsalmon;
+}
+.footer-mecano{
+  position: absolute;
+  bottom:0;
 }
 .footer-container{
   display:flex;
