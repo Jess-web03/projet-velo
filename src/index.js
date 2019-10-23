@@ -1,7 +1,8 @@
 /* import './public/style'; // entry point for styles */
 import $ from 'jquery';
 import { open, close, animateBike } from './app/hamburger';
-import {} from './app/toggle';
+import './app/toggle';
+import './app/quizz';
 
 animateBike();
 $('#open').on('click', () => {
