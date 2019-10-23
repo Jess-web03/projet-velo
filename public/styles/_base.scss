@@ -5,7 +5,8 @@ box-sizing: border-box;
  }
 
 body {
-  background-image: url(assets/images/background.png);
+  //background-image: url(assets/images/background.png);
+  background-image: url(assets/images/testBGwithoutBleed.svg);
   background-size: cover;
   /*pour rendre l'image responsive, qu'elle remplisse l'écran à n'importe quelle taille*/
   position:relative;
@@ -249,7 +250,7 @@ footer{
   background-color: lightsalmon;
 }
 .footer-mecano{
-  position: absolute;
+  //position: absolute;
   bottom:0;
 }
 .footer-container{
